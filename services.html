@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Меню услуг</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="dark"></div>
+			<div class="menu-bar">
+				<div class="wrapper">
+					<a class="phone-without-icon" href="tel:+78127403975">+7 (812) 740-39-75</a>
+					<button class="close"></button>
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><button class="services-list">Услуги</button></li>
+						<li><a href="shares.html">Акции</a></li>
+						<li><a href="certificates.html">Сертификаты</a></li>
+						<li><a href="gallery.html">Галерея</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<ul class="services-bar">
+						<li><a href="">Банные ритуалы</a></li>
+						<li><a href="massage.html">Массаж</a></li>
+						<li><a href="">Спа-процедуры</a></li>
+						<li><a href="">Фитнес</a></li>
+						<li><a href="">Аквазона</a></li>
+						<li><a href="">Ресторан</a></li>
+						<li><button>Назад</button></li>
+					</ul>
+					<a class="show-menu" href="services.html">Посмотреть меню</a>
+					<hr>
+					<div class="social">
+						<a class="vk" href=""></a>
+						<a class="fb" href=""></a>
+						<a class="in" href=""></a>
+					</div>
+				</div>
+			</div>
+			<button class="menu"></button>
+			<a class="logo" href="index.html">
+				<img src="images/logo.png">
+			</a>
+			<hr>
+			<a class="phone" href="tel:+78127403975">+7 (812) 740-39-75</a>
+		</div>
+	</header>
+	<main>
+		<section class="presentation">
+			<img src="images/presentation-certificates.jpg">
+			<h1>Сертификаты</h1>
+		</section>
+		<section class="breadcrumbs">
+			<div class="wrapper">
+				<a href="index.html">Главная</a> / Меню услуг
+			</div>
+		</section>
+		<section class="drop">
+			<div class="wrapper">
+				<select size="1" onchange="selectItem(this)">
+					<option selected>Банные ритуалы</option>
+					<option>Массаж</option>
+					<option>Спа-процедуры</option>
+					<option>Фитнес</option>
+					<option>Аквазона</option>
+					<option>Ресторан</option>
+				</select>
+			</div>
+		</section>
+		<section class="services rituals wrapper">
+			<div class="item">
+				<p>Классическая банная процедура</p>
+				<ul>
+					<li>30 мин. – <span class="price">5 500 <span class="rubl">a</span></span></li>
+					<li>60 мин. – <span class="price">8 000 <span class="rubl">a</span></span></li>
+					<li>90 мин. – <span class="price">10 000 <span class="rubl">a</span></span></li>
+				</ul>
+			</div>
+			<div class="item">
+				<p>Древнерусская банная процедура с закаливанием</p>
+				<ul>
+					<li>60 мин. – <span class="price">8 000 <span class="rubl">a</span></span></li>
+					<li>90 мин. – <span class="price">10 000 <span class="rubl">a</span></span></li>
+				</ul>
+			</div>
+		</section>
+		<section class="services massage wrapper">
+			<div class="item">
+				<p>Классическая массажная процедура</p>
+				<ul>
+					<li>30 мин. – <span class="price">5 500 <span class="rubl">a</span></span></li>
+					<li>60 мин. – <span class="price">8 000 <span class="rubl">a</span></span></li>
+					<li>Инфиники – <span class="price">100 000 <span class="rubl">a</span></span></li>
+				</ul>
+			</div>
+		</section>
+		<section class="services spa wrapper">
+			<div class="item">
+				<p>Спать</p>
+				<ul>
+					<li>30 мин. – <span class="price">500 <span class="rubl">a</span></span></li>
+					<li>60 мин. – <span class="price">80 <span class="rubl">a</span></span></li>
+					<li>90 мин. – <span class="price">10 <span class="rubl">a</span></span></li>
+				</ul>
+			</div>
+		</section>
+		<section class="services fitness wrapper">
+			<div class="item">
+				<p>Побегай вокруг дома</p>
+				<ul>
+					<li>30 мин. – <span class="price">5 500 <span class="rubl">a</span></span></li>
+					<li>60 мин. – <span class="price">8 000 <span class="rubl">a</span></span></li>
+					<li>А лучше 90 мин. – <span class="price">30 000 <span class="rubl">a</span></span></li>
+				</ul>
+			</div>
+		</section>
+		<section class="services aquazone wrapper">
+			<div class="item">
+				<p>Прекрасная классическая ванная процедура</p>
+				<ul>
+					<li>30 мин. – <span class="price">7 500 <span class="rubl">a</span></span></li>
+				</ul>
+			</div>
+		</section>
+		<section class="services restourant wrapper">
+			<div class="item">
+				<p>Хороший повар наедается во время готовки</p>
+				<ul>
+					<li>Еда – <span class="price">5 500 <span class="rubl">a</span></span></li>
+					<li>Икра заморская баклажанная – <span class="price">8 000 <span class="rubl">a</span></span></li>
+					<li>Фит-супер-гипер салатик-для-побухания – <span class="price">50 000 <span class="rubl">a</span></span></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section class="down">
+			<div class="wrapper clearfix">
+				<div class="social">
+					<a class="vk" href=""></a>
+					<a class="fb" href=""></a>
+					<a class="in" href=""></a>
+				</div>
+				<a class="phone-without-icon" href="tel:+78127403975">+7 (812) 740-39-75</a>
+				<a class="agreement" href="policy.pdf">Пользовательское соглашение</a>
+			</div>
+		</section>
+	</footer>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+	<script src="script.js"></script>
+</body>
+</html>
